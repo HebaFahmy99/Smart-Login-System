@@ -1,0 +1,19 @@
+.box{ 
+    background-color: #F8F8F8;
+    width: 60%;
+}
+.overlay{ 
+    width: 40%;
+}
+.btn{ 
+
+    background-color: #1aeab679; 
+}
+button{
+    background-color: transparent; 
+    border: none;
+}
+
+a{
+    cursor: pointer;
+} 

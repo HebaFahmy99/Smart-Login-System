@@ -1,0 +1,10 @@
+@media screen and (max-width:770px) {
+    .overlay{ 
+        display: none;
+    }
+    .header-info{ 
+        display: none; 
+        
+    }
+
+}

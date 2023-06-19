@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title>Smart System</title> 
+    <link rel="shortcut icon" href="favicon-32x32(1).png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section id="page-info" class="vh-100" style="background-color: #F8F8F8;">
+        <div class="overlay h-100 position-absolute" style="background-color: #1aeab679;">
+        </div>
+        <div id="loginPage" class="conitaner d-block py-5 d-flex justify-content-center align-items-center">
+            <div class="box shadow-lg my-3 ">
+                <div class="row pt-5 pb-3">
+                    <div class="col-md-4 main-header d-flex flex-column justify-content-center position-relative">
+                        <div class="header-info position-absolute my-auto text-center" style="z-index: 999;">
+                            <i class="fa-solid fa-arrow-right-to-bracket fa-3x mb-3"></i>
+                            <h3 class="fw-bold fs-1 ">Smart login system</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-8 ">
+                        <div class="inner-item px-4 py-2">
+                            <h2 class="text-center fw-bold fs-1">Log In</h2>
+                            <div class="mb-3">
+                                <label for="emailLogIn" class="form-label fw-bold">Email</label>
+                                <input type="email" class="form-control" id="emailLogIn" placeholder="name@email.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="passwordLogIn" class="form-label fw-bold">Password</label>
+                                <input type="password" class="form-control" id="passwordLogIn"
+                                    placeholder="Enter your password">
+                            </div>
+                            <p id="info-incorrect" style="display:none ;" class=" text-center fw-bold alert alert-danger py-4">
+                                Failed To Log In</p>
+                            <div class="btn w-50 mx-auto d-flex justify-content-center align-items-center ">
+                                <button class=" w-100 py-2">Log in</button>
+                            </div>
+                            <div class="d-flex justify-content-end mt-4">
+                                <p>Don't have an account? <a id="signup" class="fw-bold" style="text-decoration:none ; color:black;" target="_self">Sign Up</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="signUpPage" class="conitaner d-none py-5  d-flex justify-content-center align-items-center">
+            <div class="box shadow-lg ">
+                <div class="row pt-5 pb-3 ">
+                    <div class="col-md-4 d-flex flex-column justify-content-center position-relative">
+                        <div class="header-info position-absolute my-auto text-center" style="z-index: 999;">
+                            <i class="fa-solid fa-arrow-right-to-bracket fa-3x mb-3"></i>
+                            <h3 class="fw-bold fs-1  ">Smart login system</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="inner-item  p-4">
+                            <h2 class="text-center fw-bold fs-1">Sign Up </h2>
+                            <div class="mb-3">
+                                <label for="nameRegisteration" class="form-label fw-bold">Name</label>
+                                <input type="text" class="form-control" id="nameRegisteration"
+                                    placeholder="Enter your name"> 
+                                <p id="nameInputValidation" class="d-none text-center alert alert-danger py-2">
+                                   Name must starts with upper character and can not contain any numbers!</p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailRegisteration" class="form-label fw-bold">Email</label>
+                                <input type="email" class="form-control" id="emailRegisteration"
+                                    placeholder="Enter your email"> 
+                                    <p id="emailInputValidation" class="d-none text-center alert alert-danger py-2">
+                                        A valid email is required!</p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="passwordRegisteration" class="form-label fw-bold">Password</label>
+                                <input type="password" class="form-control" id="passwordRegisteration"
+                                placeholder="Enter your password"> 
+                                <p id="passwordInputValidation" class="d-none text-center alert alert-danger py-2">
+                                       Password length must be at least 7 characters and can not contain any special characters!</p>
+                            </div>
+                            <p id="emailExists" style="display:none ;" class=" text-center alert alert-danger py-2">
+                                This email is already registered.</p>
+                            <p id="empty-data" style="display:none ;" class=" text-center alert alert-danger py-2">
+                                Please enter your data.</p>
+                            <div class="btn w-50 mx-auto d-flex justify-content-center align-items-center ">
+                                <button class="w-100 py-2">Sign Up</button>
+                            </div>
+                            <div class="d-flex justify-content-end mt-4 ">
+                                <p>You have an account? <a target="_self" class="fw-bold" style="text-decoration:none ; color:black;">Sign in</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
